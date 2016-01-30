@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            width:100%;
+            height:100%;
+            overflow: hidden;
+        }
+        .box{
+            width:3000px;
+            height:3000px;
+            position: absolute;
+            border:10px solid red;
+        }
+    </style>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            var clientW=$(window).width();
+            var clientH=$(window).height();
+            var box=$('.box');
+            boxW=box.outerWidth();
+            boxH=box.outerHeight();
+            box.css({
+                left:(clientW-boxW)/2+'px',
+                top:(clientH-boxH)/2+'px',
+                transform:'scale(0.2,0.2)'
+            });
+            setTimeout(function(){
+                box.css({
+                    transition:'transform 1s ease',
+                    transform:'scale(1,1)'
+                });
+            },300);
+            var bx=(boxW-clientW)/clientW;
+            var by=(boxH-clientH)/clientH;
+            var px, py;
+            $(document).mousemove(function(e){
+                px= e.pageX;
+                py= e.pageY;
+            });
+            setInterval(function(){
+                box.css({
+                    transition:'top 0.5s,left 0.5s',
+                    left:bx*-px+'px',
+                    top:by*-py+'px'
+                })
+            },50)
+
+
+        })
+    </script>
+</head>
+<body>
+    <div class="box">
+        <a href="#"><img src="image/dd_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_small.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/bb_medium.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>12dsfdgghhghgjjjjjjjjjjjjjjjjjjjjjfffffffffffffffffffffffffggggggggg
+        <a href="#"><img src="image/aa_large.jpg"></a>
+        <a href="#"><img src="image/aa_large.jpg"></a>
+    </div>
+</body>
+</html>

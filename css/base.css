@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,span{
+    margin:0;
+}
+ul,li{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+*[text-l]{
+    text-align: left;
+}
+*[text-c]{
+    text-align: center;
+}
+*[text-r]{
+    text-align: right;
+}
+header{
+    background: #333;
+    height:44px;
+    font-size: 16px;
+    line-height: 44px;
+    color:#fff;
+    text-align: center;
+}
+.header-con{
+    height:100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding:0 22px;
+}
+.nav div{
+    cursor: pointer;
+}
+.nav div:hover{
+    color: #999;
+}
+.header2{
+    display: none;
+}
+
+.header2 .son{
+    width: 300%;
+    background: #000;
+    display: none;
+    padding:0 48px 40px;
+    position: relative;
+    z-index: 100;
+}
+.dai{
+    position: relative;
+}
+
+.dai .son2{
+    display: none;
+    width: 200%;
+    background: #fff;
+    padding: 0 40px;
+    position: absolute;
+    top:44px;
+    right:0;
+    z-index: 100;
+}
+.header2 .son a:hover{
+     color: #999;
+ }
+.header2 .son a{
+    line-height: 48px;
+    border-bottom: 1px solid #333;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    margin: 5px 0;
+    margin-top:0px;
+    text-align: left;
+    cursor: pointer;
+}
+.dai .son2 a{
+    border-bottom: 1px solid #E3E3E3;
+    background: #fff;
+    line-height: 44px;
+    text-decoration: none;
+    display: block;
+    color: #08c;
+    text-align: left;
+}
+
+.list {
+    display: block;
+    text-decoration: none;
+    color:#000;
+}
+.list:after,.list:before{
+    content: "";
+    display: block;
+}
+.list:after{
+    clear: both;
+}
+.text{
+    text-align: center;
+    padding:30px 0 20px;
+    color:#333;
+    font-family: 'PingHei', 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiSC-Light', 'Arial', sans-serif;
+}
+.text h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.text h2{
+    font-weight: normal;
+    font-size: 20px;margin-bottom: 10px;
+}
+.text span{
+    font-size: 12px;margin-bottom: 10px;
+}
+.banner{
+    position: relative;
+    width:100%;
+    height:400px;
+    overflow: hidden;
+}
+.box{
+    width:500%;
+    height:100%;
+}
+.banner .list{
+    width:20%;
+    height:100%;
+    float:left;
+}
+.list:nth-child(1){
+    background: url("../image/home_hero_ssn_small.png") no-repeat center;
+    background-size: auto;
+    background-position: center bottom;
+}
+.list:nth-child(2){
+    background: url("../image/home_hero_evergreen_ipad_small.jpg") no-repeat center;
+    background-size: auto;
+    background-position: center bottom;
+}
+.list:nth-child(3){
+    background: url("../image/home_hero_cny_small.jpg") no-repeat center;
+    background-size: auto;
+    background-position: center bottom;
+}
+.list:nth-child(4){
+    background: url("../image/hero_music_movies_books_xsmall.png") no-repeat center;
+    background-size: auto;
+    background-position: center bottom;
+}
+
+.banner .btnlist{
+    width:112px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right:0;
+    margin: 0 auto;
+}
+.banner .btnlist li{
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    background-color: #999;
+    float:left;
+    margin: 0 10px;
+}
+.btnlist li:nth-child(1){
+    border:1px solid #2097D2;
+    background:none;
+}
+@media screen and (min-width: 730px){
+    .text h1{
+        font-size: 40px;margin-bottom: 10px;
+    }
+    .text h2{
+        font-size: 28px;margin-bottom: 10px;
+    }
+    .text span{
+        font-size: 16px;margin-bottom: 10px;
+    }
+    .banner{
+         height:600px;
+
+     }
+    .list:nth-child(1){
+        background: url("../image/home_hero_ssn_large.png") no-repeat center;background-position: center 0px;background-size: auto;
+    }
+    .list:nth-child(2){
+        background: url("../image/home_hero_evergreen_ipad_medium.jpg") no-repeat center;background-position: center 150px;background-size: auto;
+    }
+    .list:nth-child(3){
+        background: url("../image/home_hero_cny_medium.jpg") no-repeat center;background-position: center 150px;background-size: auto;
+    }
+    .list:nth-child(4){
+        background: url("../image/hero_music_movies_books_large.png") no-repeat center;background-position: center 150px;background-size: auto;
+    }
+}
+
+
+.slider .img{
+    height:200px;
+    background-size: auto 200px;
+}
+.slider .img:nth-child(1){
+    background: url("../image/aa_large.jpg") no-repeat center;
+}
+.slider .img:nth-child(2){
+    background: url("../image/bb_large.jpg") no-repeat center;
+}
+.slider .img:nth-child(3){
+    background: url("../image/cc_large.jpg") no-repeat center;
+}
+.slider .img:nth-child(4){
+    background: url("../image/dd_large.jpg") no-repeat center;
+}
+.slider .row div{
+    border:2px solid #fff;
+}
+@media screen and (min-width: 730px) and (max-width: 1070px){
+    .slider .img:nth-child(1){
+        background: url("../image/aa_medium.jpg") no-repeat center;
+    }
+    .slider .img:nth-child(2){
+        background: url("../image/bb_medium.jpg") no-repeat center;
+    }
+    .slider .img:nth-child(3){
+        background: url("../image/cc_medium.jpg") no-repeat center;
+    }
+    .slider .img:nth-child(4){
+        background: url("../image/dd_medium.jpg") no-repeat center;
+    }
+}
+@media screen and (min-width: 1070px){
+    .slider .img:nth-child(1){
+        background: url("../image/aa_large.jpg") no-repeat center;
+    }
+    .slider .img:nth-child(2){
+        background: url("../image/bb_large.jpg") no-repeat center;
+    }
+    .slider .img:nth-child(3){
+        background: url("../image/cc_large.jpg") no-repeat center;
+    }
+    .slider .img:nth-child(4){
+        background: url("../image/dd_large.jpg") no-repeat center;
+    }
+}
+
+
+.foot{
+    background: #F2F2F2;
+    padding: 20px 0;
+}
+
+.foot h3{
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 500;
+    letter-spacing: normal;
+    color: rgb(51, 51, 51);
+    position: relative;
+    cursor: pointer;
+}
+.foot h3 span{
+    position:absolute;
+    right:0;
+    top:0;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    display: none;
+}
+.foot ul li{
+    font-size: 8px;
+    color:#666;
+    line-height: 30px;
+    cursor: pointer;
+}
+.foot ul li:hover{
+    text-decoration: underline;
+}
